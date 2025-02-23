@@ -1,27 +1,345 @@
 <!DOCTYPE html>
-<html lang="id">
+<html ⚡ lang="id" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slt Gaming News | Slt Gaming News</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Slt Gaming News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://sltgamingstore.github.io/news/" />
+  <link rel="alternate" href="https://sltgamingstore.github.io/news/index.html" hreflang="id-ID" />
+  <link href='https://fonts.googleapis.com/css2?family=Prompt' rel='stylesheet'>
+  <style amp-custom>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #1a1a1a, #333);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #ffd700;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .cta-button {
+      background: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cta-button:hover {
+      background: #e6b800;
+    }
+
+    .SltGamingNews {
+      background: linear-gradient(to right, #1a1a1a, #333);
+      padding: 100px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .SltGamingNews h1 {
+      font-size: 48px;
+      margin: 0;
+      color: #ffd700;
+    }
+
+    .SltGamingNews p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .SltGamingNews .buttons {
+      margin-top: 30px;
+    }
+
+    .SltGamingNews .buttons a {
+      margin: 0 10px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #262626;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .card .date {
+      color: #ffd700;
+      font-size: 12px;
+    }
+
+    .card .button {
+      background: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .card .button i {
+      margin-right: 8px;
+    }
+
+    .newsletter {
+      background: linear-gradient(to right, #1a1a1a, #333);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+
+    .newsletter h2 {
+      font-size: 32px;
+      margin: 0 0 20px;
+      color: #ffd700;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .newsletter button {
+      background: #ffd700;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .newsletter button i {
+      margin-right: 8px;
+    }
+
+    footer {
+      background: #1a1a1a;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #ffd700;
+    }
+
+    footer .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer .footer-content div {
+      text-align: left;
+    }
+
+    footer .footer-content h4 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    footer .footer-content a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    footer .footer-content a:hover {
+      color: #ffd700;
+    }
+
+    footer .social-icons a {
+      color: #ffd700;
+      font-size: 20px;
+      margin: 0 10px;
+    }
+
+    footer .copyright {
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Slt Gaming News</h1>
-    <nav>
-      <a href="/">Beranda</a>
-      <a href="/berita">Berita Terkini</a>
-      <a href="/kontak">Kontak</a>
-    </nav>
-  </header>
-  <main>
-    Selamat Datang di Slt Gaming News
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">Slt Gaming News</div>
+      <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Berita</a>
 
-Temukan Berita Terbaru, Budaya Gaming Indonesia, dan Ulasan Berita Eksklusif Hanya di Sini.
-  </main>
+        <a href="#">Kontak</a>
+      </nav>
+      <a href="#" class="cta-button"><i class="fas fa-envelope"></i>Seputar Gaming Indonesia</a>
+    </header>
+
+    <!-- SltGamingNews Section -->
+    <section class="SltGamingNews">
+      <h1>Selamat Datang di Slt Gaming News</h1>
+      <p>Temukan Berita Terbaru, informasi seputar game terbaru, dan Ulasan Berita Gaming Eksklusif Hanya di Sini.</p>
+      <div class="buttons">
+        <a href="#" class="cta-button"><i class="fas fa-newspaper"></i> Jelajahi Berita</a>
+        <a href="#" class="cta-button"><i class="fas fa-lightbulb"></i> Berita Terbaru</a>
+      </div>
+    </section>
+
+    <!-- Berita Terkini -->
+    <section class="section">
+      <div>
+
+        <h1>Selamat Datang di Slt Gaming News</h1>
+      <p>Temukan Berita Terbaru, informasi seputar game terbaru, dan Ulasan Berita Gaming Eksklusif Hanya di Sini.</p>
+      </section>
+      
+      <section class="section">
+        <h2>Mengenal Slt Gaming News</h2>
+        <p>SLT Gaming News adalah portal berita gaming terbaru di Indonesia yang menyajikan informasi terkini, ulasan game, dan berita eksklusif dari industri game nasional maupun internasional. Dengan tim jurnalis dan reviewer game yang berpengalaman, kami berkomitmen untuk menghadirkan berita yang akurat dan terpercaya bagi komunitas gamer di Indonesia.</p>
+      
+        <h2>Berita Gaming Terbaru di Indonesia</h2>
+        <p>Slt Gaming News tidak hanya menghadirkan berita terkini, tetapi juga menyajikan informasi dengan standar jurnalistik tinggi. Portal ini menjadi pilihan utama masyarakat yang mencari berita akurat seputar politik, ekonomi, kriminal, hingga gaya hidup di Ibukota dan sekitarnya.</p>
+      
+        <h2>Apa Itu SLT Gaming News?</h2>
+        <p>SLT Gaming News adalah portal berita yang berfokus pada dunia gaming, khususnya di Indonesia. Platform ini menghadirkan informasi terbaru seputar perkembangan game, turnamen esports, hingga update dari industri gaming global. SLT Gaming News bertujuan untuk memberikan berita yang akurat dan cepat bagi para gamer, baik casual maupun profesional.</p>
+      
+        <h2>Konten yang Ditawarkan</h2>
+        <p>SLT Gaming News menyajikan berbagai konten menarik, di antaranya:</p>
+        <ul>
+          <li>Berita Game Terbaru</li>
+           <p>Update mengenai game populer seperti Mobile Legends, PUBG Mobile, Free Fire, Valorant, hingga game konsol dan PC.</p>
+           <p>Pengumuman game terbaru dan fitur-fitur terbaru dalam dunia gaming.</p>
+          <li>Esports & Turnamen</li>
+           <p>Liputan turnamen esports besar seperti MPL Indonesia, PMPL, FFWS, dan event kompetitif lainnya.</p>
+           <p>Informasi tentang tim dan pemain profesional yang sedang bersaing di kancah internasional.</p>
+          <li>Review & Tips Gaming</li>
+           <p>Ulasan mendalam tentang game baru, termasuk kelebihan dan kekurangan yang dimilikinya.</p>
+           <p>Tips dan trik bermain game yang dapat membantu pemain meningkatkan keterampilan mereka.</p>
+           <li>Promo & Event Spesial</li>
+           <p>Informasi tentang diskon top-up, event in-game, dan giveaway menarik yang bisa dimanfaatkan oleh para gamer.</p>
+        </ul>
+      
+        <h2>Komunitas SLT Gaming</h2>
+        <p>Selain menjadi sumber berita gaming, SLT Gaming News juga memiliki komunitas aktif di berbagai platform media sosial seperti Facebook, WhatsApp, dan Discord. Komunitas ini menjadi tempat bagi gamer untuk berdiskusi, berbagi pengalaman, serta mendapatkan update terbaru mengenai promo dan berita gaming.</p>
+      
+        <h2>Kesimpulan</h2>
+        <p>LT Gaming News adalah platform yang tepat bagi para gamer Indonesia yang ingin selalu mendapatkan informasi terbaru tentang dunia gaming. Dengan berbagai berita, ulasan, dan informasi esports, SLT Gaming News dapat menjadi referensi utama bagi para pecinta game di Indonesia.</p>
+        <p>Untuk mengetahui lebih lanjut, kunjungi situs resmi mereka atau ikuti akun media sosial SLT Gaming agar tidak ketinggalan informasi terbaru.</p>
+
+      </div>
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Dapatkan Update Terbaru Langsung ke Email Anda!</h2>
+    </section>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Sltgaming News. Semua hak dilindungi.</p>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h4>Berita Seputar Gaming Indonesia</h4>
+          <p>Berita Terkini & Terpercaya Mengenai Gaming</p>
+        </div>
+        <div>
+          <h4>Tautan Cepat</h4>
+          <a href="#">Beranda</a>
+          <a href="#">Berita Terkini</a>
+          <a href="#">Tips & Strategi</a>
+          <a href="#">Ulasan Kasino</a>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <p>Email: info@Sltgamingnews.com</p>
+          <p>Telepon: +62 123 4867 905</p>
+        </div>
+        <div>
+          <h4>Sosial Media</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2005 Slt Gaming News. All Rights Reserved.
+      </div>
+    </div>
   </footer>
 </body>
 </html>
